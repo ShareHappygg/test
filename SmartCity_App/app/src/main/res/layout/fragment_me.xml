@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+   <RelativeLayout
+       android:background="@drawable/me_area"
+       android:layout_width="match_parent"
+       android:layout_height="150dp">
+
+       <ImageView
+           android:src="@mipmap/myhead"
+
+           android:layout_marginLeft="30dp"
+           android:layout_marginVertical="50dp"
+           android:id="@+id/img_head"
+           android:layout_width="60dp"
+           android:layout_height="60dp"/>
+       <TextView
+           android:textSize="16sp"
+           android:id="@+id/text_me_btn"
+           android:text="登录可以享受更多服务"
+           android:textColor="@color/colorBlack"
+
+           android:layout_marginTop="60dp"
+           android:layout_toRightOf="@+id/img_head"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+   </RelativeLayout>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:textStyle="normal"
+        android:textColor="@color/colorBlack"
+        android:text="个人中心"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layout_personal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/person"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:textStyle="normal"
+                android:text="个人信息"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_edit_password"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/record"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:textStyle="normal"
+                android:text="修改密码 "
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:textStyle="normal"
+        android:textColor="@color/colorBlack"
+        android:text="意见反馈 "
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layout_feedback"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/feedback"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:textStyle="normal"
+                android:gravity="center"
+                android:text="留言"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/aboutwe"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:textStyle="normal"
+                android:text="关于我们 "
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/cunstomer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:textStyle="normal"
+                android:text="客服 "
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_margin="20dp"
+        android:textStyle="normal"
+        android:textColor="@color/colorBlack"
+        android:text="设置"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginBottom="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layout_logout"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/logout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:textStyle="normal"
+                android:text="退出登录"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

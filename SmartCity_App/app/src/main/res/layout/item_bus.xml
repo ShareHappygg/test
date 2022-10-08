@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <RelativeLayout
+       android:paddingVertical="10dp"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+       android:layout_width="match_parent"
+
+       android:layout_height="80dp">
+       <ImageView
+           android:id="@+id/img_bus"
+           android:src="@mipmap/myhead"
+           android:layout_width="50dp"
+           android:layout_height="50dp"/>
+       <TextView
+           android:text="09:15"
+           android:id="@+id/text_start"
+
+           android:layout_marginLeft="20dp"
+           android:textSize="18sp"
+           android:textColor="@color/colorBlack"
+           android:layout_toRightOf="@+id/img_bus"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <View
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:background="@color/colorGray"
+           android:layout_toRightOf="@+id/text_start"
+           android:id="@+id/text_line"
+           android:layout_width="50dp"
+           android:layout_height="1dp"
+          />
+       <TextView
+           android:text="09:15"
+           android:id="@+id/text_end"
+
+           android:layout_marginLeft="20dp"
+           android:textSize="18sp"
+           android:textColor="@color/colorBlack"
+           android:layout_toRightOf="@+id/text_line"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_below="@+id/text_start"
+            android:text="东方航空 Mu2315"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img_bus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+       <TextView
+            android:id="@+id/text_price"
+           android:textColor="@color/colorRed"
+           android:textSize="18sp"
+           android:text="@string/price"
+           android:layout_alignParentRight="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+   </RelativeLayout>
+</LinearLayout>

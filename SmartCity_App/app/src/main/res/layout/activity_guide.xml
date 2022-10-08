@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuideActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <Button
+
+        android:visibility="gone"
+        android:background="@drawable/login_btn"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/enter"
+        android:layout_gravity="center|bottom"
+        android:text="立即体验"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginHorizontal="100dp"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center|bottom"
+        android:orientation="horizontal"
+        android:id="@+id/layout_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>
